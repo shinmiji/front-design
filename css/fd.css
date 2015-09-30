@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+/* reset */
+body {
+	font:normal 12px '굴림', gulim, Arial, sans-serif;
+	line-height:1.3;
+	color:#666666;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+}
+
+br	{
+	letter-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:1em;
+}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
+	margin:0;
+	padding:0;
+}
+ul, ol {
+	list-style:none;
+}
+img {
+	border:0;
+}
+a {text-decoration:none;}
+
+/* float는 자기 형위로는 못 뜬다!!!*/
+/* common - 페이지별 공통요소 */
+body {
+	background: url('../images/bg_9x9.gif');
+}
+.wrap {
+	background-color: #fff;
+	width: 970px;
+	margin: 0px auto;
+	padding: 0px 35px;
+}
+.header {
+	height: 100px;
+	position: relative;
+	background: url('../images/bg_shadow_bottom.png')  repeat-x left bottom;
+	margin-bottom: 12px;
+}
+.header > h1 {
+	padding-bottom: 5px;
+}
+.header > ul.language {
+	position: absolute;
+	top: 15px;
+	right: 0px;
+}
+.header > ul.nav {
+	position: absolute;
+	top: 66px;
+	right: 0px;
+}
+.header > ul:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.header > ul > li {
+	float: left;
+}
+.language > li + li {
+	padding-left: 11px;
+}
+.nav > li > a {
+	font-weight: 600;
+	color: #191919;
+}
+.nav > li + li {
+	padding-left: 20px;
+}
+.breadcrumb > a {
+	padding-right: 10px;
+	background: url('../images/breadcrumb_inactive.png') no-repeat right -1px;
+}
+h2 {
+	font-size: 25px;
+	color: #F1001C;
+	text-align: right;
+	padding-right: 20px;
+}
+
+
+
+/* contents : About us - 페이지별 컨텐츠영역*/
+.pannel > ul > li {	
+	position: relative;
+}
+.pannel .description {
+	width: 330px;
+	padding: 15px 0px 0px 15px;
+	position: absolute;
+	bottom: 15px;
+	right: 18px;
+	background-color: #fff;
+}
+.pannel .description >  h3 {
+	font-size: 28px;
+	color: #F1001C;
+}
+.pannel .description > p {
+	font-size: 13px;
+}
+.pannel .description a {
+	display: block;
+	margin: 15px 0px 0px 141px;
+	width: 122px;
+	color: #fff;
+	padding: 2px 52px 2px 15px;
+	background-color: #45BBED;
+	background-image: url('../images/visual_readthestory.gif');
+	background-repeat: no-repeat;
+	background-position: 12px 0px;
+}
+.pannel .description a:hover {
+	background-color: #4BC9FF;
+	background-position: 12px -25px;
+}
+.pannel .description span {
+	display: inline-block;
+	padding: 5px 0px 0px 30px;
+	font-size: 13px;
+}
+
+/*visual*/
+.visual {
+	position: relative;
+	height: 465px;
+}
+.visual .control {
+	background-color: #FA2B18;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 970px;
+}
+.visual .control > a {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	text-indent: -999999px;
+	margin: 5px 0px 4px 0px;
+	
+}
+.visual .control > a.active {
+	background: url('../images/visual_slider_active.png') no-repeat;
+}
+.visual .control > a {
+	background: url('../images/visual_slider_inactive.png') no-repeat;
+}
+.visual > .arrow > a {
+	position: absolute;
+	top: 180px;
+	width: 50px;
+	height: 80px;
+	background-color: black;
+	background-image: url('../images/visual_arrow.png');
+	background-repeat: no-repeat;
+	text-indent: -999999px;
+	overflow: hidden;
+}
+.visual > .arrow > a.prev {
+	left: 0px;
+	top: center;
+}
+.visual > .arrow > a.next {
+	right: 0px;
+	top: center;
+	background-position: -100px 0px;
+}
+
+
+
+/*공통*/
+.section {
+	background: url('../images/line_dot.png') repeat-x bottom left;
+}
+.col1 {
+	margin-left: 20px;
+	height: 185px;
+	width: 170px;
+}
+.section h3 {
+	font-size: 22px;
+	color: #45bbed;
+	font-family: "ff-fago-web-1","ff-fago-web-2","Nimbus","Arial";
+	font-weight: normal;
+}
+.col1 > h4 {
+	font-weight: normal;
+  	font-family: "ff-fago-web-1","ff-fago-web-2","Nimbus","Arial";
+  	font-size: 12px;
+  	margin-bottom: 11px;
+  	padding-bottom: 7px;
+  	color: #45bbed;
+  	background: url('../images/line_dot.png') repeat-x bottom left;
+}
+.global >  .col3 > .col1 img {
+	width: 170px;
+	height: 170px;
+}
+
+
+/*contents*/
+.section:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.section  .col1 {
+	float: left;
+}
+.section .col2 {
+	width:380px;
+	float: left;
+}
+.section .col3 {
+	width:570px; 
+	float: left;
+}
+.section .col4 {
+	float: right;
+	width: 760px;
+}
+.section > .col3:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.section > .col4:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.section + .section {
+	padding-top: 20px;
+}
+
+/*선*/
+
+.col5 {
+	border: 1px solid red;
+}
